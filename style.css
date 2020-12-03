@@ -1,0 +1,246 @@
+*{/* Reset CSS */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;/* Limita saida da caixa, não permite que elementos saim dela*/
+}
+body{
+    background: rgb(39, 38, 38);/* chamando variavel definida */
+    font-family: 'Arial', Times, serif;
+    color: white;
+    background: linear-gradient(rgba(133, 71, 71, 0.5),rgba(0, 0, 0, 0.5)100%),url('img/background.gif');
+    background-size: cover; 
+
+    
+}
+header .container{/* caixa */
+    margin: 0;
+    width: auto;
+    height: 70px;
+    padding: 20px;
+    background-color: rgb(0, 0, 0);
+    display: flex; /* Alinha elementos na tela em Linha padrão*/
+    flex-direction: row;/* Igual ao padrão */
+    align-items: center;
+    justify-content: space-around; /* Alinha na Horizontal, espaço entre elemento */
+    
+
+}
+header .logo{
+    margin-left: 5px;
+    color: rgb(255, 255, 255);
+    font-family: 'Arial Black', Times;
+    font-size: 30px;
+   
+
+}
+
+/* MENU */
+header nav a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    padding: 25px;
+    margin-right: 10px; /* espaço referente ao elemento a direita */
+}
+
+header nav a:hover{
+    color:lawngreen;
+    padding: 25px;
+
+}
+
+/* Foto */
+.profile-photo{
+    margin-top: 100px;
+    width: 250px; 
+    height:250px;
+    padding:2px ;/* Distância da img dentro da celula da tabela */
+    border-radius: 999px; /* Arredondar bordas */
+    box-shadow: 3px 5px 15px #000800/* Sombra */
+}
+
+.principal_1{
+    font-size: 16px;
+    background-size: cover;/* Ajusta a imagem dentro da caixa, area de cobertura */
+    display: flex;/* joga elementos em linha */
+    flex-direction: column;/* Colocando flex como colunas */
+    justify-content: center;
+    align-items: center;/* Começa da esquerda */
+    text-align: center;
+
+}
+.principal_1 .descricao{
+    margin-top: 2px;
+    margin-bottom: 10px;/* espaço sobre o elemento de baixo */
+    color: rgb(235, 227, 227);
+    font-size: 20px;
+    
+}
+
+.titulo{
+    margin-top: 15%;
+    font-size: 60px;
+    
+    font-family: 'Trebuchet MS',Arial, sans-serif;
+    color: #fff;
+}
+.botao{
+    background-color: rgba(83, 78, 78, 0.5);
+    border: none;
+    padding: 15px 30px;/* Espaçamento interno */
+    margin-right: 15px;/* Espaçamento de um elemento a outro */
+    font-size: white;
+    cursor: pointer;/* muda o cursor */
+    transition: .3s ease all;/* animação do botão e time */
+    border-radius: 5px;
+    
+}
+.botao:hover{
+    background-color: lawngreen;
+
+    color: black;
+}
+.botao i{
+    margin-right: 5px;
+}
+.botao a{
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+    font-size: 15px;
+    
+}
+.container{
+    margin-left: 20px;
+}
+.principal_1 .container{/* Aplicando conceito do conteiner para formatar varios elementos */
+    width: 50%;
+}
+
+
+
+/* Footer */
+
+.foo{
+    margin-top: 15px;
+    background-color: black;
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    padding: 50px;
+    font-family: 'Trebuchet MS',Arial, sans-serif;
+
+ 
+}
+.foo a{
+    text-decoration: none;
+    color: white;
+}
+.fim{
+    text-align: center;
+    color: rgb(97, 91, 91);
+}
+
+/* Serviço */
+
+.all_serv{
+    background-color: gray;
+}
+
+/* SOBRE */
+
+.sobre{
+    width: 50%;
+    text-align: justify;
+    margin: 10px;
+    margin-bottom: 50px;
+}
+.sobre_eu{
+    width: 30%;
+    margin-left: 30%;
+    padding: 10px;
+}
+.text{
+   
+    margin: 10px;
+    
+   
+
+}
+
+.sobre ul{
+    background-color: rgba(0, 0, 0, 0.199);
+    padding: 20px;
+    border-radius: 10px;
+
+}
+.sobre ul li{
+    color: lawngreen;
+    padding: 5px;
+    
+}
+
+/* Contato */
+.contato{
+    margin: 10px;
+    padding: 10px;
+}
+.tit{
+    margin-top: 15px;
+    font-size: 25px;
+    color: lawngreen;
+    font-weight: bold;
+    font-style: italic;
+    
+}
+.contato ul{
+    background-color: rgba(0, 0, 0, 0.233);
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.contato ul li{
+    list-style-type: circle;
+    text-align: justify;
+    padding: 5px;
+    font-size: 20px;
+   
+}
+.contato a{
+    text-decoration: none;
+    color: lawngreen;;
+}
+.img_rede{
+    margin: 10px;
+    margin-bottom: 50px;
+}
+
+/* Mais */
+
+.holder {
+    margin-top: 80px;
+    display: flex;
+    justify-content: center;
+}
+.imagem {
+  
+  margin: 10px;
+  position: relative;
+  text-align: center;
+
+}
+.imagem::after {
+  content: attr(data-title); /* estilo que coloco a legenda no lugar */
+  position: absolute;
+  width: 100%;
+  bottom: -20px;
+  left: 0;
+}
+.imagem img{
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+    box-shadow: 1px 2px 30px black;
+}
+.tudo{
+    margin-bottom: 200px;
+}
