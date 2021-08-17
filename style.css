@@ -29,7 +29,7 @@ header .logo{
     margin-left: 5px;
     color: rgb(255, 255, 255);
     font-family: 'Arial Black', Times;
-    font-size: 30px;
+    font-size: 20px;
    
 
 }
@@ -217,6 +217,7 @@ header nav a:hover{
 /* Mais */
 
 .holder {
+    max-width: 800px;
     margin-top: 80px;
     display: flex;
     justify-content: center;
@@ -244,3 +245,9 @@ header nav a:hover{
 .tudo{
     margin-bottom: 200px;
 }
+
+@media only screen and (max-width: 500px) {
+    .holder{
+        display: inline-block;
+    }
+  }
